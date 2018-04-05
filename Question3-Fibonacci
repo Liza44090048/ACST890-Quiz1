@@ -1,0 +1,19 @@
+#!/bin/bash
+#Ask user for the input
+echo "How many terms of Fibonacci sequence should be generated?"
+  read n #read input from the user
+  x1=0 #first number of Fib sec
+  x2=1 #second number of Fib sec
+  i=2
+  echo "Here is a Fibonacci sequence of  $n terms :"
+  echo "$x1"
+  echo "$x2"
+  while [ $i -lt $n ]
+  do
+      i=`expr $i + 1 ` #use expr to sum
+      x3=`expr $x1 + $x2 `
+      echo "$x3"
+      x1=$x2
+      x2=$x3
+#end the loop
+ done
