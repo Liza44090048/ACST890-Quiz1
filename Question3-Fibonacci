@@ -5,7 +5,7 @@ echo "How many terms of Fibonacci sequence should be generated?"
   x1=0 #first number of Fib sec
   x2=1 #second number of Fib sec
   i=2
-  echo "Here is a Fibonacci sequence of  $n terms :"
+  echo "Here is a Fibonacci sequence of $n terms :"
   echo "$x1"
   echo "$x2"
   while [ $i -lt $n ]
